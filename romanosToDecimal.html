@@ -1,0 +1,48 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="romanosToDecimal.css"/>
+    <script type="text/javascript" src="romanosToDecimal.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div id="site">
+
+        <div class="card">
+            <div class="card-header">
+                Conversor de Números Romanos
+            </div>
+            <div class="card-body">
+              <p class="card-text">Converta algarismos decimais em algarismos romanos e vice-versa</p>
+
+              <div class="input-group">
+                <label id="lblRomanos" for="romanos">Romano:</label>
+                <input type="text" pattern="([IVXLCDMivxlcdm])+" id="inputRomanos" name="romanos">
+                <span class="error"><p id="romanos_error"></p></span>
+
+                <div class="input-group-btn">
+                    <button id="convertToDecimalButton" class="btn btn-primary" onclick="convertToDecimal()">Converter</button>
+                </div>
+                
+              </div>
+
+              <div class="input-group">
+                <label id="lblRomanos" for="decimal">Decimal:</label>
+                <input type="number" id="inputDecimal" name="decimal">
+                <span class="error"><p id="decimal_error"></p></span>
+
+                <div class="input-group-btn">
+                    <button id="convertToRomanoButton" class="btn btn-primary" onclick="convertToRomano()">Converter</button>
+                </div>
+                
+              </div>
+              
+            </div>
+        </div>
+
+    </div>
+    
+</body>
