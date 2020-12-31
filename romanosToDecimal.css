@@ -39,12 +39,9 @@ img {
     height:auto;
 }
 
-body {
-    background-image: url('Assets/background.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-}
+
+
+
 
 /* reset de margens */
 * {
@@ -62,6 +59,21 @@ body {
     background: #FFF; /* fundo branco para navegadores que não suportam rgba */
     background: rgba(255,255,255,0.8); /* fundo branco com um pouco de transparência */
 }
+
+@media only screen and (min-width: 600px) {
+    #site {
+      margin-left: 15%;
+      margin-top: 5%;
+      width: 38%;
+    }
+
+    body {
+        background-image: url('Assets/background.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+  }
 
 #tabela {
     margin-top: 5%;
