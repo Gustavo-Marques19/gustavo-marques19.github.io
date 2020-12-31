@@ -31,9 +31,13 @@ function deromanize (str) {
 }
 
 function convertToDecimal(){
-    var numeroRomano = document.getElementById("inputRomanos").value;
+	document.getElementById('romanos_error').innerHTML = '';
+
+	var numeroRomano = document.getElementById("inputRomanos").value;
+	
+	var res = deromanize(numeroRomano);
     
-    var numeroDecimal = deromanize(numeroRomano);
+    var numeroDecimal = res == false ? 0 : res;
 
     document.getElementById("inputDecimal").setAttribute('value', numeroDecimal);
 

@@ -55,13 +55,20 @@ body {
 
 #site {
     position: absolute;
-    top: 15%;
     padding: 20px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     background: #FFF; /* fundo branco para navegadores que não suportam rgba */
     background: rgba(255,255,255,0.8); /* fundo branco com um pouco de transparência */
+}
+
+#tabela {
+    margin-top: 5%;
+}
+
+#explicacao {
+    margin-top: 5%;
 }
 
 
